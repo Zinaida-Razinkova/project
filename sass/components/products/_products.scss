@@ -1,0 +1,38 @@
+.products {
+    background-color: #1d1d1e;
+    @media screen and (max-width: 950px) {
+            display: none;
+        }
+}
+
+.products__nav {
+    background-color: #1d1d1e;
+}
+
+.products__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products__item {
+    padding: 20px;
+    background-color: #58585a;
+    &:hover,
+        &:focus {
+            background-color: #898989;
+        }
+}
+.products__item-active {
+    background-color: #dcd7bd;
+    
+}
+
+.products__link {
+    font-weight: 800;
+    color: #fff;
+}
+.products__link-active{
+    color: $text-color;
+}

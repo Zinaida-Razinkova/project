@@ -1,0 +1,26 @@
+.breadcrumbs {
+    background-color: #1d1d1e;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumbs__item {
+    text-transform: uppercase;
+
+    @media screen and (max-width: 950px) {
+        font-size: 14px;
+    }
+
+    @media screen and (max-width: 425px) {
+        font-size: 10px;
+    }
+}
+
+.breadcrumbs__item-color {
+    color: $accent-color;
+}

@@ -1,0 +1,115 @@
+.footer {
+    background-color: $text-color;
+    padding: 50px 0;
+
+    @media screen and (max-width: 768px) {
+        padding: 30px 0;
+    }
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: start;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 50px;
+    padding-bottom: 40px;
+
+    @media screen and (max-width: 900px) {
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 550px) {
+        grid-template-columns: repeat(1, auto);
+        justify-content: start;
+    }
+}
+
+.footer__title {
+    font-weight: 600;
+    color: $accent-color;
+    margin-bottom: 10px;
+}
+
+.footer__phone {
+    margin-bottom: 15px;
+}
+
+.footer__list a {
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+.footer__item {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.footer__item::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 100%;
+    height: 0.5px;
+    background-color: $primary-color;
+}
+
+.footer__link {
+    color: $primary-color;
+}
+
+.link__instagram,
+.link__youtube,
+.link__facebook {
+    display: flex;
+    align-items: center;
+}
+
+.link__instagram::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/footer/instagram.svg) center no-repeat;
+    margin-right: 10px;
+}
+
+.link__youtube::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/footer/youtube.svg) center no-repeat;
+    margin-right: 10px;
+}
+
+.link__facebook::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/footer/facebook.svg) center no-repeat;
+    margin-right: 10px;
+}
+
+.footer__policy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-top: 1px solid $primary-color;
+    padding-top: 20px;
+}
+
+.footer__policy-text {
+    color: $primary-color;
+}

@@ -1,0 +1,17 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    border: none;
+    padding: 20px;
+    background-color: $accent-color;
+    color: $text-color;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $hover-light;
+    }
+}

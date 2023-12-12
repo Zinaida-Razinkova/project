@@ -1,0 +1,107 @@
+.hero {
+    position: relative;
+
+    @media screen and (min-width: 769px) {
+        padding-top: 80px;
+    }
+}
+
+.hero__container {
+    position: relative;
+}
+
+.hero__title {
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    color: #fff;
+
+    @media screen and (max-width: 1023.98px) {
+        top: 40px;
+    }
+}
+
+.hero__title span {
+    display: block;
+}
+
+.hero__text {
+    -webkit-text-stroke: 1px rgba(255, 255, 255);
+    -webkit-text-fill-color: transparent !important;
+}
+
+.hero__backdrop {
+    width: 100%;
+    height: 700px;
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.1),
+            rgba(0, 0, 0, 0.1)), url(../images/hero/hero001.jpg) no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-color: $primary-color;
+
+    @media screen and (max-width: 1023.98px) {
+        height: 500px;
+        background-position: bottom;
+    }
+
+    @media screen and (max-width: 768.98px) {
+        height: 400px;
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1440.98px) {
+        height: 500px;
+    }
+
+    @media screen and (min-width: 1441px) and (max-width: 2000.98px) {
+        height: 600px;
+    }
+
+    @media screen and (min-width: 2001px) {
+        height: 700px;
+    }
+}
+
+.hero__backdrop-products {
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/hero/hero001.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__decor-top,
+.hero__decor-bottom {
+    position: absolute;
+    right: 0px;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    opacity: 0.8;
+
+    @media screen and (max-width: 1023.98px) {
+        height: 300px;
+    }
+
+    @media screen and (max-width: 768.98px) {
+        height: 250px;
+    }
+
+    @media screen and (max-width: 425.98px) {
+        height: 160px;
+    }
+}
+
+.hero__decor-top {
+    top: 0px;
+    z-index: 3;
+    background: url(../images/hero/bg002.png) no-repeat;
+    transform: scale(-1, -1);
+}
+
+.hero__decor-bottom {
+    bottom: 0px;
+    z-index: 4;
+    background: url(../images/hero/bg001.png) no-repeat;
+    transform: scale(-1, 1);
+}
