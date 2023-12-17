@@ -1,0 +1,62 @@
+.block {
+    position: relative;
+    padding: 30px 0;
+}
+
+.block__container {
+    @media screen and (min-width: 769px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+.block__content {
+    @media screen and (min-width: 769px) {
+        max-width: 400px;
+    }
+
+    &:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+}
+
+.block__img {
+    max-width: 700px;
+    overflow: hidden;
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+
+.block__img img {
+    width: 100%;
+}
+
+.block__title {
+    margin-bottom: 15px;
+}
+
+.block__text {
+    margin-bottom: 20px;
+}
+
+.block__list {
+margin-bottom: 30px;}
+
+.block__item {
+    display: flex;
+        align-items: start;
+        gap: 10px;
+}
+
+.block__item::before {
+    content: "";
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background: url(../images/products/check.svg) center no-repeat;
+}
