@@ -2,41 +2,73 @@
   position: fixed;
   width: 100%;
   background: linear-gradient(to right, rgb(255, 255, 255), #efeeee);
-  height: 90px;
+  height: 120px;
   z-index: 50;
-  padding: 7px 0;
+  padding: 20px 0;
 }
 @media screen and (max-width: 768.98px) {
   .header {
     position: relative;
-    height: 60px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 425.98px) {
+  .header {
+    height: 90px;
+    padding: 10px 0;
   }
 }
 
 .header__container {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768.98px) {
   .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: end;
   }
 }
 
-@media screen and (min-width: 769px) {
+.header__logo {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+}
+@media screen and (max-width: 425.98px) {
   .header__logo {
-    position: absolute;
-    top: -4px;
+    flex-direction: column;
+    align-items: start;
   }
 }
+
+.header__logo-text {
+  line-height: 0.8;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 800;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 1024px) {
+  .header__logo-text {
+    line-height: 0.9;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425.98px) {
+  .header__logo-text {
+    line-height: 0.9;
+    font-size: 9px;
+  }
+}
+
 @media screen and (max-width: 768.98px) {
-  .header__logo {
+  .header__logo img {
     max-width: 50px;
   }
 }
 
-@media screen and (min-width: 425.98px) {
+@media screen and (min-width: 610px) {
   .header__contacts {
     display: flex;
     align-items: center;
@@ -69,6 +101,26 @@
 .header__contacts-email:hover,
 .header__contacts-email:focus {
   color: rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768.98px) {
+  .link__phone-header,
+  .link__email-header {
+    align-items: end;
+    line-height: 0;
+  }
+}
+@media screen and (max-width: 610px) {
+  .link__phone-header:not(:last-child),
+  .link__email-header:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 375.98px) {
+  .link__phone-header,
+  .link__email-header {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 768.98px) {
@@ -250,7 +302,7 @@
 @media screen and (max-width: 768.98px) {
   .header__menu {
     position: absolute;
-    top: 53px;
+    top: 90px;
     left: 0;
     z-index: 1;
     width: 100%;
@@ -311,67 +363,67 @@ summary::-webkit-details-marker {
 }
 @media screen and (min-width: 769px) {
   .hero {
-    padding-top: 80px;
+    padding-top: 120px;
   }
 }
 
 .hero__container {
   position: relative;
+  height: 500px;
+}
+@media screen and (min-width: 1441px) {
+  .hero__container {
+    height: 600px;
+  }
 }
 
 .hero__title {
   position: absolute;
   z-index: 5;
-  top: 50px;
+  top: 200px;
   color: #fff;
 }
-@media screen and (max-width: 1023.98px) {
+@media screen and (max-width: 1024.98px) {
   .hero__title {
-    top: 40px;
+    top: 100px;
   }
 }
 
-.hero__title span {
-  display: block;
+.hero__title h1 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.35em;
+  margin-bottom: 15px;
 }
 
-.hero__text {
-  -webkit-text-stroke: 1px rgb(255, 255, 255);
-  -webkit-text-fill-color: transparent !important;
+.hero__title h2 {
+  line-height: 1;
+}
+.hero__title h2:not(:last-child) {
+  margin-bottom: 15px;
 }
 
 .hero__backdrop {
+  position: absolute;
+  top: 120px;
+  left: 0;
   width: 100%;
-  height: 700px;
+  height: 500px;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/hero/hero001.jpg) no-repeat;
   background-position: top;
   background-size: cover;
   background-color: #bababa;
 }
-@media screen and (max-width: 1023.98px) {
-  .hero__backdrop {
-    height: 500px;
-    background-position: bottom;
-  }
-}
 @media screen and (max-width: 768.98px) {
   .hero__backdrop {
-    height: 400px;
+    top: 0px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1440.98px) {
-  .hero__backdrop {
-    height: 500px;
-  }
-}
-@media screen and (min-width: 1441px) and (max-width: 2000.98px) {
+@media screen and (min-width: 1441px) {
   .hero__backdrop {
     height: 600px;
-  }
-}
-@media screen and (min-width: 2001px) {
-  .hero__backdrop {
-    height: 700px;
   }
 }
 
@@ -381,46 +433,38 @@ summary::-webkit-details-marker {
   background-size: cover;
 }
 
-.hero__decor-top,
-.hero__decor-bottom {
+.hero__decor-logo {
   position: absolute;
-  right: 0px;
-  width: 100%;
-  height: 500px;
-  background-size: cover;
-  opacity: 0.8;
-}
-@media screen and (max-width: 1023.98px) {
-  .hero__decor-top,
-  .hero__decor-bottom {
-    height: 300px;
-  }
+  width: 1200px;
+  height: 750px;
+  background-size: contain;
+  opacity: 0.7;
+  background: url(../../../images/hero/logo004.png) no-repeat;
+  top: -150px;
+  right: -690px;
+  z-index: 4;
+  transform: rotate(10deg);
 }
 @media screen and (max-width: 768.98px) {
-  .hero__decor-top,
-  .hero__decor-bottom {
-    height: 250px;
+  .hero__decor-logo {
+    background: url(../../../images/hero/logo003.png) no-repeat;
+    top: -170px;
+    right: -720px;
+  }
+}
+@media screen and (max-width: 550.98px) {
+  .hero__decor-logo {
+    background: url(../../../images/hero/logo002.png) no-repeat;
+    top: -120px;
+    right: -850px;
   }
 }
 @media screen and (max-width: 425.98px) {
-  .hero__decor-top,
-  .hero__decor-bottom {
-    height: 160px;
+  .hero__decor-logo {
+    background: url(../../../images/hero/logo002.png) no-repeat;
+    top: -120px;
+    right: -900px;
   }
-}
-
-.hero__decor-top {
-  top: 0px;
-  z-index: 3;
-  background: url(../images/hero/bg002.png) no-repeat;
-  transform: scale(-1, -1);
-}
-
-.hero__decor-bottom {
-  bottom: 0px;
-  z-index: 4;
-  background: url(../images/hero/bg001.png) no-repeat;
-  transform: scale(-1, 1);
 }
 
 .cards {

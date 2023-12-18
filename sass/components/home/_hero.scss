@@ -2,37 +2,54 @@
     position: relative;
 
     @media screen and (min-width: 769px) {
-        padding-top: 80px;
+        padding-top: 120px;
     }
 }
 
 .hero__container {
     position: relative;
+    height: 500px;
+
+    @media screen and (min-width: 1441px) {
+        height: 600px;
+    }
 }
 
 .hero__title {
     position: absolute;
     z-index: 5;
-    top: 50px;
+    top: 200px;
     color: #fff;
 
-    @media screen and (max-width: 1023.98px) {
-        top: 40px;
+    @media screen and (max-width: 1024.98px) {
+        top: 100px;
     }
 }
 
-.hero__title span {
-    display: block;
+.hero__title h1 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.35em;
+    margin-bottom: 15px;
+
 }
 
-.hero__text {
-    -webkit-text-stroke: 1px rgba(255, 255, 255);
-    -webkit-text-fill-color: transparent !important;
+.hero__title h2 {
+    line-height: 1;
+
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
 }
 
 .hero__backdrop {
+    position: absolute;
+    top: 120px;
+    left: 0;
     width: 100%;
-    height: 700px;
+    height: 500px;
     background: linear-gradient(to right,
             rgba(0, 0, 0, 0.1),
             rgba(0, 0, 0, 0.1)), url(../images/hero/hero001.jpg) no-repeat;
@@ -40,25 +57,13 @@
     background-size: cover;
     background-color: $primary-color;
 
-    @media screen and (max-width: 1023.98px) {
-        height: 500px;
-        background-position: bottom;
-    }
-
     @media screen and (max-width: 768.98px) {
-        height: 400px;
+        top: 0px;
     }
 
-    @media screen and (min-width: 1024px) and (max-width: 1440.98px) {
-        height: 500px;
-    }
 
-    @media screen and (min-width: 1441px) and (max-width: 2000.98px) {
+    @media screen and (min-width: 1441px) {
         height: 600px;
-    }
-
-    @media screen and (min-width: 2001px) {
-        height: 700px;
     }
 }
 
@@ -70,38 +75,34 @@
     background-size: cover;
 }
 
-.hero__decor-top,
-.hero__decor-bottom {
+.hero__decor-logo {
     position: absolute;
-    right: 0px;
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    opacity: 0.8;
-
-    @media screen and (max-width: 1023.98px) {
-        height: 300px;
-    }
+    width: 1200px;
+    height: 750px;
+    background-size: contain;
+    opacity: 0.7;
+    background: url(../../../images/hero/logo004.png) no-repeat;
+    top: -150px;
+    right: -690px;
+    z-index: 4;
+    transform: rotate(10deg);
 
     @media screen and (max-width: 768.98px) {
-        height: 250px;
+        background: url(../../../images/hero/logo003.png) no-repeat;
+        top: -170px;
+        right: -720px;
+    }
+
+    @media screen and (max-width: 550.98px) {
+        background: url(../../../images/hero/logo002.png) no-repeat;
+        top: -120px;
+        right: -850px;
     }
 
     @media screen and (max-width: 425.98px) {
-        height: 160px;
+        background: url(../../../images/hero/logo002.png) no-repeat;
+        top: -120px;
+        right: -900px;
     }
-}
 
-.hero__decor-top {
-    top: 0px;
-    z-index: 3;
-    background: url(../images/hero/bg002.png) no-repeat;
-    transform: scale(-1, -1);
-}
-
-.hero__decor-bottom {
-    bottom: 0px;
-    z-index: 4;
-    background: url(../images/hero/bg001.png) no-repeat;
-    transform: scale(-1, 1);
 }

@@ -2,32 +2,62 @@
     position: fixed;
     width: 100%;
     background: linear-gradient(to right, rgb(255, 255, 255), #efeeee);
-    height: 90px;
+    height: 120px;
     z-index: 50;
-    padding: 7px 0;
+    padding: 20px 0;
 
     @media screen and (max-width: 768.98px) {
         position: relative;
-        height: 60px;
+        height: 80px;
+    }
+
+    @media screen and (max-width: 425.98px) {
+        height: 90px;
+        padding: 10px 0;
     }
 }
 
 .header__container {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    @media screen and (max-width: 769px) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    @media screen and (max-width: 768.98px) {
+        align-items: end;
     }
+
 }
 
 .header__logo {
-    @media screen and (min-width: 769px) {
-        position: absolute;
-        top: -4px;
+    display: flex;
+    align-items: end;
+    gap: 10px;
+
+    @media screen and (max-width: 425.98px) {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+.header__logo-text {
+    line-height: 0.8;
+    color: rgba(0, 0, 0, .6);
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+        line-height: 0.9;
+        font-size: 14px;
     }
 
+    @media screen and (max-width: 425.98px) {
+        line-height: 0.9;
+        font-size: 9px;
+    }
+}
+
+.header__logo img {
     @media screen and (max-width: 768.98px) {
         max-width: 50px;
     }
@@ -35,7 +65,7 @@
 
 .header__contacts {
 
-    @media screen and (min-width: 425.98px) {
+    @media screen and (min-width: 610px) {
         display: flex;
         align-items: center;
         justify-content: end;
@@ -65,6 +95,26 @@
     &:focus {
         color: rgba(0, 0, 0, 0.4);
     }
+}
+
+.link__phone-header,
+.link__email-header {
+    @media screen and (max-width: 768.98px) {
+        align-items: end;
+        line-height: 0;
+    }
+
+    @media screen and (max-width: 610px) {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    @media screen and (max-width: 375.98px) {
+
+        font-size: 12px;
+    }
+
 }
 
 .header__list {
@@ -269,7 +319,7 @@
 .header__menu {
     @media screen and (max-width: 768.98px) {
         position: absolute;
-        top: 53px;
+        top: 90px;
         left: 0;
         z-index: 1;
         width: 100%;
