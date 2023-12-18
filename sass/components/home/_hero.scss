@@ -81,26 +81,26 @@
     height: 750px;
     background-size: contain;
     opacity: 0.7;
-    background: url(../../../images/hero/logo004.png) no-repeat;
+    background: url(../images/hero/logo004.png) no-repeat;
     top: -150px;
     right: -690px;
     z-index: 4;
     transform: rotate(10deg);
 
     @media screen and (max-width: 768.98px) {
-        background: url(../../../images/hero/logo003.png) no-repeat;
+        background: url(../images/hero/logo003.png) no-repeat;
         top: -170px;
         right: -720px;
     }
 
     @media screen and (max-width: 550.98px) {
-        background: url(../../../images/hero/logo002.png) no-repeat;
+        background: url(../images/hero/logo002.png) no-repeat;
         top: -120px;
         right: -850px;
     }
 
     @media screen and (max-width: 425.98px) {
-        background: url(../../../images/hero/logo002.png) no-repeat;
+        background: url(../images/hero/logo002.png) no-repeat;
         top: -120px;
         right: -900px;
     }
