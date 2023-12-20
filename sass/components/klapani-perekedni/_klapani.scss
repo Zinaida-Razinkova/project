@@ -1,0 +1,17 @@
+.klapani {
+    padding: 70px 0;
+    @media screen and (max-width: 1024px) {
+            padding: 30px 0;
+        }
+        background-color: #dcd7bd;
+}
+
+.klapani__title {
+    margin-bottom: 30px;
+}
+
+.klapani__text {
+ &:not(:last-child){
+    margin-bottom: 20px;
+ }
+}

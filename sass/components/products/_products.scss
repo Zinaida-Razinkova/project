@@ -17,12 +17,15 @@
 }
 
 .products__item {
-    padding: 20px;
+    padding: 15px;
     background-color: #58585a;
     &:hover,
         &:focus {
             background-color: #898989;
         }
+                @media screen and (max-width: 1280px) {
+                        padding: 8px;
+                }
 }
 .products__item-active {
     background-color: #dcd7bd;
@@ -30,7 +33,11 @@
 
 .products__link {
     font-weight: 800;
+    font-size: 14px;
     color: #fff;
+    @media screen and (max-width: 1280px) {
+            font-size: 10px;
+        }
 }
 .products__link-active{
     color: $text-color;

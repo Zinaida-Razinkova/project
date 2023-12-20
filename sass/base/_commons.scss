@@ -50,6 +50,7 @@ a {
     @media screen and (max-width: 1439.98px) {
         padding: 0 25px;
     }
+
     @media screen and (max-width: 768px) {
         padding: 0 10px;
     }
@@ -97,14 +98,15 @@ main {
 
 .title {
     font-family: inherit;
-            font-size: calc(22px + 26 * (100vw / 1440));
-            font-weight: 900;
-            text-transform: uppercase;        
+    font-size: calc(22px + 26 * (100vw / 1440));
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .title__small {
     font-size: 28px;
-    font-weight: 800;
+    font-weight: 700;
+    line-height: 1;
 }
 
 .main {

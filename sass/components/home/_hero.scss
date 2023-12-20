@@ -26,7 +26,7 @@
     }
 }
 
-.hero__title h1 {
+.hero__title-heading {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
@@ -44,7 +44,9 @@
     }
 }
 
-.hero__backdrop {
+
+.hero__backdrop,
+.hero__backdrop-klapani {
     position: absolute;
     top: 120px;
     left: 0;
@@ -71,6 +73,13 @@
     background: linear-gradient(to right,
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(../images/hero/hero001.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.hero__backdrop-klapani {
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/cards/card001.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }
