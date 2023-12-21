@@ -924,7 +924,7 @@ summary::-webkit-details-marker {
 }
 
 .products__item-active {
-  background-color: #dcd7bd;
+  background-color: #f9f8f8;
 }
 
 .products__link {
@@ -1023,9 +1023,13 @@ summary::-webkit-details-marker {
 }
 
 .download {
-  padding: 30px 0;
+  padding: 70px 0;
   background-color: #bababa;
-  background-color: #dcd7bd;
+}
+@media screen and (max-width: 768px) {
+  .download {
+    padding: 30px 0;
+  }
 }
 
 .download__container {
@@ -1267,7 +1271,6 @@ summary::-webkit-details-marker {
 }
 
 .block {
-  position: relative;
   padding: 30px 0;
 }
 
@@ -1282,7 +1285,7 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 769px) {
   .block__content {
-    max-width: 400px;
+    max-width: 600px;
   }
 }
 .block__content:not(:last-child) {
@@ -1315,21 +1318,24 @@ summary::-webkit-details-marker {
 
 .block__item {
   display: flex;
-  align-items: start;
-  gap: 10px;
+  align-items: center;
+  gap: 15px;
+}
+.block__item:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .block__item::before {
   content: "";
-  display: inline-block;
   width: 35px;
   height: 35px;
+  padding: 10px;
   background: url(../images/products/check.svg) center no-repeat;
 }
 
 .klapani {
   padding: 70px 0;
-  background-color: #dcd7bd;
+  background-color: #f9f8f8;
 }
 @media screen and (max-width: 1024px) {
   .klapani {
@@ -1339,6 +1345,11 @@ summary::-webkit-details-marker {
 
 .klapani__title {
   margin-bottom: 30px;
+}
+
+.klapani__title-big {
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .klapani__text:not(:last-child) {
@@ -1536,6 +1547,11 @@ main {
   font-size: 28px;
   font-weight: 700;
   line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .title__small {
+    font-size: 22px;
+  }
 }
 
 .main {

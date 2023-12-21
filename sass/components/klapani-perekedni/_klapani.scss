@@ -3,11 +3,16 @@
     @media screen and (max-width: 1024px) {
             padding: 30px 0;
         }
-        background-color: #dcd7bd;
+        background-color: #f9f8f8;
 }
 
 .klapani__title {
     margin-bottom: 30px;
+}
+
+.klapani__title-big {
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .klapani__text {

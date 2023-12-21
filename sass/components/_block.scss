@@ -1,5 +1,4 @@
 .block {
-    position: relative;
     padding: 30px 0;
 }
 
@@ -14,7 +13,7 @@
 
 .block__content {
     @media screen and (min-width: 769px) {
-        max-width: 400px;
+        max-width: 600px;
     }
 
     &:not(:last-child){
@@ -45,18 +44,22 @@
 }
 
 .block__list {
-margin-bottom: 30px;}
+margin-bottom: 30px;
+}
 
 .block__item {
     display: flex;
-        align-items: start;
-        gap: 10px;
+        align-items: center;
+        gap: 15px;
+        &:not(:last-child) {
+                margin-bottom: 10px;
+            }
 }
 
 .block__item::before {
     content: "";
-        display: inline-block;
         width: 35px;
         height: 35px;
+        padding: 10px;
         background: url(../images/products/check.svg) center no-repeat;
 }

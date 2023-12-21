@@ -1,7 +1,9 @@
 .download {
-    padding: 30px 0;
+    padding: 70px 0;
     background-color: $primary-color;
-    background-color:  #dcd7bd;
+    @media screen and (max-width: 768px) {
+            padding: 30px 0;
+        }
 }
 
 .download__container {
@@ -17,7 +19,6 @@
 
 .download__content {
     text-align: center;
-    // max-width: 300px;
     margin-bottom: 30px;
 }
 
