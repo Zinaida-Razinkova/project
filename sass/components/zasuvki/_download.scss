@@ -9,7 +9,7 @@
 .download__container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 30px;
     @media screen and (max-width: 425px) {
             flex-direction: column;
@@ -18,7 +18,7 @@
 
 
 .download__content {
-    text-align: center;
+    // text-align: center;
     margin-bottom: 30px;
 }
 

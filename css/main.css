@@ -1035,7 +1035,7 @@ summary::-webkit-details-marker {
 .download__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   gap: 30px;
 }
 @media screen and (max-width: 425px) {
@@ -1045,7 +1045,6 @@ summary::-webkit-details-marker {
 }
 
 .download__content {
-  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -1278,7 +1277,7 @@ summary::-webkit-details-marker {
   .block__container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 40px;
   }
 }
@@ -1293,7 +1292,7 @@ summary::-webkit-details-marker {
 }
 
 .block__img {
-  max-width: 700px;
+  max-width: 400px;
   overflow: hidden;
 }
 .block__img:not(:last-child) {
@@ -1349,7 +1348,6 @@ summary::-webkit-details-marker {
 
 .klapani__title-big {
   text-transform: uppercase;
-  text-align: center;
 }
 
 .klapani__text:not(:last-child) {

@@ -6,7 +6,7 @@
     @media screen and (min-width: 769px) {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         gap: 40px;
     }
 }
@@ -23,7 +23,7 @@
 }
 
 .block__img {
-    max-width: 700px;
+    max-width: 400px;
     overflow: hidden;
 
     &:not(:last-child) {
