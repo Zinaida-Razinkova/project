@@ -1,21 +1,17 @@
-.klapani {
-    padding: 70px 0;
-    @media screen and (max-width: 1024px) {
-            padding: 30px 0;
-        }
+.product {
+    padding: 30px 0;
         background-color: #f9f8f8;
 }
 
-.klapani__title {
-    margin-bottom: 30px;
+.product__title {
+    margin-bottom: 5px;
 }
 
-.klapani__title-big {
+.product__title-big {
     text-transform: uppercase;
-    // text-align: center;
 }
 
-.klapani__text {
+.product__text {
  &:not(:last-child){
     margin-bottom: 20px;
  }

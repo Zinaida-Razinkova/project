@@ -54,11 +54,13 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 30px;
-    row-gap: 30px;
+    column-gap: 50px;
+    row-gap: 50px;
 
     @media screen and (max-width: 1280px) {
         grid-template-columns: repeat(2, auto);
+        column-gap: 30px;
+            row-gap: 30px;
     }
 
     @media screen and (max-width: 1024px) {

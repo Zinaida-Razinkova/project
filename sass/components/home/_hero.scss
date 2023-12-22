@@ -44,9 +44,9 @@
     }
 }
 
-
 .hero__backdrop,
-.hero__backdrop-klapani {
+.hero__backdrop-klapani,
+.hero__backdrop-zasuvky {
     position: absolute;
     top: 120px;
     left: 0;
@@ -74,6 +74,13 @@
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url(../images/hero/hero001.jpg) no-repeat;
     background-position: center;
+    background-size: cover;
+}
+.hero__backdrop-zasuvky {
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url(../images/products/zasuvki002.png) no-repeat;
+    background-position: top;
     background-size: cover;
 }
 .hero__backdrop-klapani {

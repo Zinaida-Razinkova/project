@@ -21,6 +21,15 @@ body {
     line-height: 1.5;
     background-color: #fff;
     color: $text-color;
+
+    @media screen and (min-width: 1280px) {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+    @media screen and (min-width: 1600px) {
+            font-size: 22px;
+            line-height: 1.7;
+        }
 }
 
 ul,
@@ -42,14 +51,14 @@ a {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 50px;
+    padding: 0 25px;
 
-    @media screen and (max-width: 1439.98px) {
-        padding: 0 25px;
-    }
+    // @media screen and (max-width: 1439.98px) {
+    //     padding: 0 25px;
+    // }
 
     @media screen and (max-width: 768px) {
         padding: 0 10px;
