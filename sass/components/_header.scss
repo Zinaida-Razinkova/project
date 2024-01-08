@@ -118,7 +118,6 @@
 }
 
 .header__list {
-
     @media screen and (max-width: 768.98px) {
         text-align: center;
         margin-bottom: 19px;
@@ -163,6 +162,7 @@
     font-size: 14px;
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
 
     @media screen and (max-width: 768.98px) {
         color: $primary-color;

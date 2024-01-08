@@ -9,7 +9,7 @@
 }
 
 .cards__logo {
-    max-width: 100px;
+    max-width: 170px;
 
     @media screen and (max-width: 425px) {
         max-width: 50px;
@@ -37,15 +37,15 @@
 }
 
 .cards__text {
-    font-size: 28px;
-    line-height: 1;
+    font-size: 38px;
     font-weight: 900px;
+    line-height: 1.5;
     margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.6);
 
-    @media screen and (max-width:1024px) {
-        font-size: 22px;
-    }
+    // @media screen and (max-width:1024px) {
+    //     font-size: 22px;
+    // }
 }
 
 .cards__card {
@@ -141,10 +141,10 @@
 .card__front-title {
     text-align: center;
     position: relative;
-    top: -90px;
+    top: -30px;
     z-index: 1;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 26px;
     color: #000;
 }
 
@@ -157,16 +157,16 @@
     z-index: 0;
     top: 0;
     left: 0;
-    top: 38%;
+    top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     width: 600px;
     height: 600px;
-    background-image: url(../images/products/arrow003.png);
+    background-image: url(../images/products/arrow004.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 430px;
     opacity: 0.8;
 }
 

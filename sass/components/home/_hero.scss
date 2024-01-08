@@ -26,22 +26,17 @@
     }
 }
 
+
+// h2
 .hero__title-heading {
     text-transform: uppercase;
-    font-size: 14px;
+font-size: 14px;
     font-weight: 500;
-    line-height: 1.5;
     letter-spacing: 0.35em;
-    margin-bottom: 15px;
-
-}
-
-.hero__title h2 {
-    line-height: 1;
-
-    &:not(:last-child) {
-        margin-bottom: 15px;
-    }
+    margin-bottom: 10px;
+    @media screen and (min-width: 1440px) {
+            font-size: 18px;
+        }
 }
 
 .hero__backdrop,

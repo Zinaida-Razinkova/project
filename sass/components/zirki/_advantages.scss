@@ -8,7 +8,7 @@
 
 .advantages__container{
     display: flex;
-    gap: 40px;
+    gap: 50px;
     align-items: center;
     justify-content: center;
     @media screen and (max-width: 1024px) {
@@ -17,7 +17,7 @@
 }
 .advantages__content{
     @media screen and (min-width: 1024px) {
-            max-width: 400px;
+            max-width: 800px;
         }
 }
 
