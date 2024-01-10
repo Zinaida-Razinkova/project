@@ -26,17 +26,32 @@
     }
 }
 
-
 // h2
 .hero__title-heading {
     text-transform: uppercase;
-font-size: 14px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.35em;
     margin-bottom: 10px;
+
     @media screen and (min-width: 1440px) {
-            font-size: 18px;
-        }
+        font-size: 18px;
+    }
+}
+
+.hero__title-big {
+    font-family: inherit;
+        font-size: calc(32px + 42 * (100vw / 1920));
+        font-weight: 900;
+        line-height: 1.3;
+        text-transform: uppercase;
+        
+}
+
+.hero__stroke {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-shadow: none;
 }
 
 .hero__backdrop,

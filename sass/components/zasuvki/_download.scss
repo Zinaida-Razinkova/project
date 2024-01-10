@@ -1,9 +1,23 @@
 .download {
     padding: 30px 0;
     background-color: $primary-color;
-    // @media screen and (max-width: 768px) {
-    //         padding: 30px 0;
-    //     }
+    @media screen and (max-width: 768px) {
+            padding: 30px 0;
+        }
+}
+
+.download1 {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    z-index: 0;
+    @media screen and (max-width: 768px) {
+            right: 20px;
+        }
+}
+
+.download__img1 img{
+    width: 150px;
 }
 
 .download__container {

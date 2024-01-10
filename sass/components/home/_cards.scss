@@ -11,7 +11,7 @@
 .cards__logo {
     max-width: 170px;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 768px) {
         max-width: 50px;
     }
 }
@@ -19,8 +19,8 @@
 .cards__wrapp {
     display: flex;
     align-items: start;
-    gap: 70px;
-    margin-bottom: 70px;
+    gap: 20px;
+    margin-bottom: 30px;
 
 
     @media screen and (max-width: 768.98px) {
@@ -30,25 +30,57 @@
     }
 }
 
+.cards__link {
+
+}
+
+.cards__title {
+    display: flex;
+    align-items: end;
+    gap: 30px;
+}
 .cards__title h2 {
     line-height: 0.8;
     color: rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
+font-size: 35px;
+
+    @media screen and (min-width: 768.98px) {
+            display: none;
+        }
 }
 
-.cards__text {
-    font-size: 38px;
-    font-weight: 900px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: rgba(0, 0, 0, 0.6);
+// .cards__text {
+//     font-size: 38px;
+//     font-weight: 900px;
+//     line-height: 1.5;
+//     margin-bottom: 20px;
+//     color: rgba(0, 0, 0, 0.6);
+// }
 
-    // @media screen and (max-width:1024px) {
-    //     font-size: 22px;
-    // }
+// .cards__paragraph {
+//     margin-bottom: 30px;
+// }
+
+.cards__item {
+    display: flex;
+    align-items: start;
+    gap: 0px;
+
+    &:not(:last-child){
+    margin-bottom: 10px;
+    }
 }
 
-.cards__card {
+.cards__item::before {
+    content: "";
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 35px;
+    height: 35px;
+    background: url(../images/products/check.svg) center no-repeat;
+}
+
+.cards__card-1 {
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-items: center;
@@ -56,6 +88,7 @@
     flex-wrap: wrap;
     column-gap: 50px;
     row-gap: 50px;
+    margin-bottom: 50px;
 
     @media screen and (max-width: 1280px) {
         grid-template-columns: repeat(2, auto);
@@ -72,13 +105,37 @@
         grid-template-columns: repeat(1, auto);
     }
 }
+.cards__card-2 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+
+    @media screen and (max-width: 1280px) {
+        grid-template-columns: repeat(2, auto);
+        column-gap: 30px;
+        row-gap: 30px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        column-gap: 15px;
+        row-gap: 15px;
+    }
+
+    @media screen and (max-width: 640px) {
+        grid-template-columns: repeat(1, auto);
+    }
+}
 
 .card {
     position: relative;
     width: 400px;
     height: 400px;
-    perspective: 1000px;
-    overflow: hidden;
+    perspective: 500px;
+
 
     @media screen and (max-width: 990.98px) {
         width: 300px;

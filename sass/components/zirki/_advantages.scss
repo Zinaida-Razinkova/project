@@ -39,6 +39,7 @@
 .advantages__item::before {
     content: "";
     display: inline-block;
+    flex: 0 0 auto;
     width: 35px;
     height: 35px;
     background: url(../images/products/check.svg) center no-repeat;
@@ -47,7 +48,7 @@
 .advantages__item-text {}
 
 .advantages__img{
-    max-width: 700px;
+    max-width: 400px;
         overflow: hidden;
     
         &:not(:last-child) {
