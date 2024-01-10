@@ -1445,7 +1445,7 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 50px;
   right: 50px;
-  z-index: 200;
+  z-index: 9;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1502,6 +1502,7 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 50px;
   right: 250px;
+  z-index: 10;
   max-width: 550px;
   height: auto;
   padding: 20px;
