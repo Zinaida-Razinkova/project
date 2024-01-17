@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>КМС - Головна</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.7.0/modern-normalize.min.css">
@@ -301,8 +302,40 @@
                         </ul>
                         <a class="button" href="contacts.html">ЗВ'ЯЖІТЬСЯ З НАМИ</a>
                     </div>
-                    <div class="advantages__img">
+                    <!-- <div class="advantages__img">
                         <img src="./images/cards/card003.jpg" alt="" width="500">
+                    </div> -->
+
+                    <!-- Slider main container -->
+                    <div class="advantages__swiper swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="advantages__wrapper swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="advantages__slide swiper-slide">
+                                <img src="./images/advantages/1001.jpg" alt="">
+                            </div>
+                            <div class="advantages__slide swiper-slide">
+                                <img src="./images/advantages/1002.jpg" alt="">
+                            </div>
+                            <div class="advantages__slide swiper-slide">
+                                <img src="./images/advantages/1003.jpg" alt="">
+                            </div>
+                            <div class="advantages__slide swiper-slide">
+                                <img src="./images/advantages/1004.jpg" alt="">
+                            </div>
+                            <div class="advantages__slide swiper-slide">
+                                <img src="./images/advantages/1005.jpg" alt="">
+                            </div>
+                            <div class="advantages__slide swiper-slide">
+                                <img src="./images/advantages/1006.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="advantages__pagination swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons -->
+                        <div class="advantages__button-prev swiper-button-prev"></div>
+                        <div class="advantages__button-next swiper-button-next"></div>
                     </div>
                 </div>
             </section>
@@ -361,6 +394,8 @@
     </div>
     <script src="./js/scroll.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/swiper.js"></script>
 </body>
 
 </html>
