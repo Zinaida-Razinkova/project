@@ -6,6 +6,13 @@
         }
 }
 
+.klapani__download {
+    display: none;
+    @media screen and (max-width: 620px) {
+            display: block;
+        }
+}
+
 .download1 {
     position: absolute;
     top: 30px;
