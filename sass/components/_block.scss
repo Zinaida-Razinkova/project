@@ -28,11 +28,17 @@
 }
 
 .block__img {
-    max-width: 400px;
+    max-width: 550px;
     overflow: hidden;
     @media screen and (max-width: 768px) {
             margin-bottom: 30px;
         }
+}
+
+.block__img-item {
+@media screen and (max-width: 1919px) {
+        display: none;
+    }
 }
 
 .block__img img {

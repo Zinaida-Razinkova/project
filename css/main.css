@@ -1114,15 +1114,12 @@ summary::-webkit-details-marker {
   }
 }
 
-.download1 {
-  position: absolute;
-  top: 30px;
-  right: 50px;
-  z-index: 0;
+.zasuvki__download {
+  display: none;
 }
-@media screen and (max-width: 768px) {
-  .download1 {
-    right: 20px;
+@media screen and (max-width: 620px) {
+  .zasuvki__download {
+    display: block;
   }
 }
 
@@ -1425,12 +1422,18 @@ summary::-webkit-details-marker {
 }
 
 .block__img {
-  max-width: 400px;
+  max-width: 550px;
   overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .block__img {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1919px) {
+  .block__img-item {
+    display: none;
   }
 }
 
