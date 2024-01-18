@@ -1422,8 +1422,7 @@ summary::-webkit-details-marker {
 }
 
 .block__img {
-  max-width: 550px;
-  overflow: hidden;
+  max-width: 650px;
 }
 @media screen and (max-width: 768px) {
   .block__img {
