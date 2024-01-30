@@ -30,10 +30,6 @@
     }
 }
 
-.cards__link {
-
-}
-
 .cards__title {
     display: flex;
     align-items: end;
@@ -48,23 +44,10 @@ font-size: 35px;
             display: none;
         }
 }
-
-// .cards__text {
-//     font-size: 38px;
-//     font-weight: 900px;
-//     line-height: 1.5;
-//     margin-bottom: 20px;
-//     color: rgba(0, 0, 0, 0.6);
-// }
-
-// .cards__paragraph {
-//     margin-bottom: 30px;
-// }
-
+ 
 .cards__item {
     display: flex;
     align-items: start;
-    gap: 0px;
 
     &:not(:last-child){
     margin-bottom: 10px;
@@ -90,8 +73,9 @@ font-size: 35px;
     row-gap: 50px;
     margin-bottom: 50px;
 
-    @media screen and (max-width: 1280px) {
-        grid-template-columns: repeat(2, auto);
+    @media screen and (max-width: 1380px) {
+        display: flex;
+        flex-wrap: wrap;
         column-gap: 30px;
             row-gap: 30px;
     }

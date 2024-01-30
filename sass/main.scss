@@ -1,24 +1,25 @@
 @import "./utils/variables";
 @import "./components/header";
-@import "./components/home/hero";
-@import "./components/home/cards";
+@import "./components/hero";
+@import "./components/cards";
 @import "./components/footer";
+@import "./components/pulse";
+@import "./components/download";
+@import "./components/advantages";
 
 @import "./components/products/breadcrumbs";
 @import "./components/products/products";
 @import "./components/products/process";
 
 @import "./components/zasuvki/zasuvki";
-@import "./components/zasuvki/download";
-
 @import "./components/company/timeline";
 
 @import "./components/zirki/zirki";
-@import "./components/zirki/advantages";
+
 @import "./components/block";
 
 @import "./components/klapani-perekedni/klapani";
-@import "./components/klapani-perekedni/pulse";
+
 
 
 
