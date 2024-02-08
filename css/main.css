@@ -1550,7 +1550,7 @@ summary::-webkit-details-marker {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1024px) {
   .block__img-item {
     display: none;
   }
