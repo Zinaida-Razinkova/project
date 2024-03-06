@@ -11,13 +11,7 @@
     }
     @media screen and (min-width: 1280px) {
         gap: 50px;
-        // margin-left: 50px;
-    }
-    // @media screen and (min-width: 1280px) {
-    //     gap: 150px;
-    //     margin-left: 50px;
-    // }
-   
+    }   
 }
 
 .block__content {
@@ -28,20 +22,20 @@
 }
 
 .block__img {
-    max-width: 650px;
+    max-width: 450px;
     @media screen and (max-width: 768px) {
             margin-bottom: 30px;
         }
 }
 
 .block__img-item {
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
         display: none;
     }
 }
 
 .block__img img {
-    width: 100%;
+    // width: 100%;
 }
 
 .block__title {
